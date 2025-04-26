@@ -17,7 +17,7 @@ func twoSumBrute(nums []int, target int) []int {
 	for i, inum := range nums {
 		//fmt.Printf("i %d. num %d\n", i, num)
 		for j, jnum := range nums {
-			if (inum + jnum) == target {
+			if (inum+jnum) == target && i != j {
 				return []int{i, j}
 			}
 		}
